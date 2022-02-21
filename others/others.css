@@ -1,4 +1,7 @@
 
+/* Safari has issues with flex max-width. Can't fix. */
+
+
 html,
 body {
     margin: 0;
