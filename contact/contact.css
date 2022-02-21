@@ -10,7 +10,7 @@ body {
 
 @media only screen and (min-width:768px) {
     body {
-        background: url(../images/sea.jpg) no-repeat;
+        background: url(../images/sea-small.jpg) no-repeat;
         background-size: cover;
     }
 }
