@@ -9,13 +9,13 @@ body {
 }
 
 @media only screen and (min-width:768px) {
-	body {
+    body {
         background: url(../images/sea.jpg) no-repeat;
         background-size: cover;
     }
 }
 
-body .main-content-overlay:nth-child(1){
+body .main-content-overlay:nth-child(1) {
     background-color: antiquewhite;
 }
 
@@ -38,10 +38,11 @@ body .main-content-overlay:nth-child(1){
     font-family: "poppins-bold", sans-serif;
     color: rgb(209, 209, 209);
 }
+
 .contact-header {
     text-align: center;
     line-height: 100%;
-    color:#FF0077;
+    color: #FF0077;
 }
 
 .contact-info {
@@ -52,18 +53,35 @@ body .main-content-overlay:nth-child(1){
     align-items: center;
     width: 100%;
 }
-.contact-info .contact-tap {
+
+.contact-info .contact-tab {
     width: 45%;
 }
+
 .contact-tab {
-    width: 200px;
+    min-width: 200px;
     text-align: center;
     margin-top: 20px;
+    transition: color 0.4s ease;
 }
-.contact-tab h3, .contact-tab h5 {
+
+.contact-tab:hover {
+    color: #FF0077;
+    transition: color 0.4s ease;
+}
+
+.contact-tab:hover p {
+    color: rgb(238, 238, 238);
+    transition: color 0.4s ease;
+}
+
+.contact-tab h3,
+.contact-tab h5 {
     margin: 20px;
 }
-.contact-tab p, .contact-tab a{
+
+.contact-tab p,
+.contact-tab a {
     margin: 20px 0 20px 0;
     font-size: 1rem;
     color: rgb(161, 161, 161);
@@ -75,7 +93,7 @@ body .main-content-overlay:nth-child(1){
 }
 
 @media only screen and (min-width:768px) {
-	.contact-info .contact-tap {
+    .contact-info .contact-tab {
         width: 25%;
     }
 }

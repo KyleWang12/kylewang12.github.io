@@ -1,4 +1,3 @@
-
 html,
 body {
     margin: 0;
@@ -6,9 +5,11 @@ body {
     box-sizing: border-box;
     height: fit-content;
 }
+
 .main-content-overlay {
     height: calc(100% - 45px);
 }
+
 .other-info {
     display: block;
     width: 70%;
@@ -17,15 +18,22 @@ body {
     margin-bottom: 30px;
 }
 
-.other-info h2{
+.other-info h2 {
     font-family: "poppins-bold", sans-serif;
     color: #FF0077;
     text-align: center;
     margin: 20px 0 20px 0;
 }
-.other-info p{
+
+.other-info p {
     text-align: center;
+    font-family: "poppins-regular", sans-serif;
 }
+
+.other-info #safari-sucks {
+    display: none;
+}
+
 .gallery {
     display: flex;
     display: -webkit-flex;
@@ -36,6 +44,7 @@ body {
     justify-content: center;
     margin-bottom: 50px;
 }
+
 .gallery-col {
     width: 100%;
     display: flex;
@@ -43,18 +52,26 @@ body {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
+
 .gallery-photos {
-    max-width:100%;
-    max-height:100%;
+    max-width: 100%;
+    max-height: 100%;
     width: auto;
     margin: 10px;
 }
+
 .gallery-photos:hover {
-    box-shadow:0 0 10px rgba(0,0,0,.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 @media screen and (min-width:768px) {
     .gallery-col {
         width: 50%;
+    }
+}
+
+@supports (-webkit-touch-callout: none) {
+    .other-info #safari-sucks {
+        display: block;
     }
 }

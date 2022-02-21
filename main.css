@@ -42,17 +42,17 @@ body {
     transition: all 0.4s ease-out;
 }
 
-.input-toggler:checked ~ .menu-toggler .menu-toggler-line {
+.input-toggler:checked~.menu-toggler .menu-toggler-line {
     top: 25%;
     width: 110%;
     transform: rotate(45deg);
 }
 
-.input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(2) {
+.input-toggler:checked~.menu-toggler .menu-toggler-line:nth-child(2) {
     display: none;
 }
 
-.input-toggler:checked ~ .menu-toggler .menu-toggler-line:nth-child(3) {
+.input-toggler:checked~.menu-toggler .menu-toggler-line:nth-child(3) {
     top: -25%;
     width: 110%;
     transform: rotate(135deg);
@@ -72,15 +72,15 @@ body {
     transition: all 0.4s ease-out;
 }
 
-.input-toggler:checked ~ .main-navigation {
+.input-toggler:checked~.main-navigation {
     transform: translateX(0%);
 }
 
 .main-navigation li a {
     display: block;
-    color:white;
+    color: white;
     text-decoration: none;
-    box-shadow:0px 0px 10px rgba(0,0,0,.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     background-color: rgb(59, 59, 59);
     margin: 5px;
     border-radius: 5%;
@@ -93,8 +93,8 @@ body {
     transition: transform 0.2s;
 }
 
-.main-navigation li.current > a {
-	color: #FF0077;
+.main-navigation li.current>a {
+    color: #FF0077;
 }
 
 .main-content-overlay {
@@ -115,18 +115,21 @@ body {
     font-family: "poppins-bold", sans-serif;
     color: rgb(59, 59, 59);
     text-align: center;
-    height: calc(100% - 45px);;
+    height: calc(100% - 45px);
+    ;
 }
 
-.about h1,h2,h3 {
+.about h1,
+h2,
+h3 {
     margin: 0;
 }
 
 .about p {
-    font-family: "poppins-regular", sans-serif; 
+    font-family: "poppins-regular", sans-serif;
 }
 
-.main-content-overlay:nth-child(3n){
+.main-content-overlay:nth-child(3n) {
     background-color: antiquewhite;
 }
 
@@ -148,23 +151,26 @@ body {
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 50px;
-    color:#FF0077;
+    color: #FF0077;
 }
 
 @media screen and (min-width:768px) {
-	.menu-toggler {
+    .menu-toggler {
         width: 25px;
         height: 20px;
     }
+
     .edu-content {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr 1.5fr;
     }
+
     .edu-content div:first-child {
         grid-row: 1/2;
         grid-column: 1/4;
         margin: auto;
     }
+
     .edu-content div:nth-child(3) {
         grid-row: 2/3;
         grid-column: 3/4;
