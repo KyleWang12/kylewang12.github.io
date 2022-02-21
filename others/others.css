@@ -28,6 +28,7 @@ body {
 }
 .gallery {
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 70%;
