@@ -1,3 +1,15 @@
+@supports (-webkit-touch-callout: none) {
+    #safari-sucks {
+        display: block;
+    }
+}
+
+@supports not (-webkit-touch-callout: none) {
+    #safari-sucks {
+        display: none;
+    }
+}
+
 html,
 body {
     margin: 0;
@@ -28,10 +40,6 @@ body {
 .other-info p {
     text-align: center;
     font-family: "poppins-regular", sans-serif;
-}
-
-.other-info #safari-sucks {
-    display: none;
 }
 
 .gallery {
@@ -67,11 +75,5 @@ body {
 @media screen and (min-width:768px) {
     .gallery-col {
         width: 50%;
-    }
-}
-
-@supports (-webkit-touch-callout: none) {
-    .other-info #safari-sucks {
-        display: block;
     }
 }
