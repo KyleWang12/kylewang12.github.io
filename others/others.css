@@ -1,0 +1,58 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+}
+.main-content-overlay {
+    height: calc(100% - 45px);
+}
+.other-info {
+    display: block;
+    width: 70%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.other-info h2{
+    font-family: "poppins-bold", sans-serif;
+    color: #FF0077;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+.other-info p{
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.gallery-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.gallery-photos {
+    height: 100%;
+    width: auto;
+    margin: 10px;
+}
+.gallery-photos:hover {
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+}
+
+@media screen and (min-width:768px) {
+    .gallery-col {
+        width: 50%;
+    }
+}

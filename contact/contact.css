@@ -1,0 +1,74 @@
+@import url("fonts.css");
+@import url("font-awesome/css/font-awesome.min.css");
+@import url("micons/micons.css");
+
+html,
+body {
+    height: 100vh;
+    background: url(../images/sea.jpg);
+}
+
+body .main-content-overlay:nth-child(1){
+    background-color: antiquewhite;
+}
+
+.menu-toggler-line {
+    background-color: #FF0077;
+}
+
+.main-content-overlay {
+    height: calc(100% - 45px);
+}
+
+.contact-content {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: "poppins-bold", sans-serif;
+    color: rgb(209, 209, 209);
+}
+.contact-header {
+    text-align: center;
+    line-height: 100%;
+    color:#FF0077;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.contact-info .contact-tap {
+    width: 45%;
+}
+.contact-tab {
+    width: 200px;
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-tab h3, .contact-tab h5 {
+    margin: 20px;
+}
+.contact-tab p, .contact-tab a{
+    margin: 20px 0 20px 0;
+    font-size: 1rem;
+    color: rgb(161, 161, 161);
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+@media only screen and (min-width:768px) {
+	.contact-info .contact-tap {
+        width: 25%;
+    }
+}

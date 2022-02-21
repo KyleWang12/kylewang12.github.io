@@ -1,0 +1,31 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+.main-content-overlay {
+    height: calc(100% - 45px);
+}
+
+.project-content {
+    width: 70%;
+    min-height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "poppins-bold", sans-serif;
+    color: rgb(59, 59, 59);
+}
+.project-content div:first-child {
+    text-align: center;
+    margin-bottom: 30px;
+    color:#FF0077;
+}
+
+.project-content div p {
+    font-family: "poppins-regular", sans-serif;
+}
