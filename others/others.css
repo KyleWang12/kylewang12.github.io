@@ -1,14 +1,13 @@
-@supports (-webkit-touch-callout: none) {
-    #safari-sucks {
-        display: block;
-    }
-}
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
 
-@supports not (-webkit-touch-callout: none) {
-    #safari-sucks {
-        display: none;
+    #safari-sucks { 
+
+        display: block;
+        color:red; 
+
     }
-}
+}}
 
 html,
 body {
@@ -70,6 +69,10 @@ body {
 
 .gallery-photos:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+#safari-sucks {
+    display: none;
 }
 
 @media screen and (min-width:768px) {
